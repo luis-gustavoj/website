@@ -8,8 +8,13 @@ const config: Config = {
     "./lib/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mono: ["var(--font-geist-mono)"],
+      },
+    },
   },
+  darkMode: "class",
   plugins: [],
 };
 export default config;
