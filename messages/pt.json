@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "home": {
+      "greeting": "Oi, eu sou o Luis Silva",
+      "description": "Seja bem-vindo(a) ao meu mundo de código e pixels.",
+      "paragraph01": "Sou um engenheiro de software front-end apaixonado por traduzir minha arte através de códigos e pixels. Quando não estou debugando, estou dando vida a interfaces mágicas. Cuidado, meus códigos têm o poder de surpreender e divertir!",
+      "paragraph02": "Sou um entusiasta de fotografia e arte, constantemente capturando o mundo ao meu redor em momentos espontâneos. Fora do escritório, você provavelmente me encontrará na academia, explorando novos lugares ou curtindo o tempo com amigos.",
+      "paragraph03": "Se estiver afim de trocar uma ideia, estou sempre à disposição para uma boa conversa. Sinta-se à vontade para me chamar a qualquer momento!"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "greeting": "Meu nome é Luis, tenho <bold>{age}</bold> anos.",
+      "description": "Sou um desenvolvedor front-end com <bold>{experience}</bold> anos de experiência e durante minha jornada já trabalhei com diversas tecnologias e frameworks, como: <italic>Next.js, ReactJS, Typescript, TailwindCSS, CSS, HTML, Git e muito mais.</italic>",
+      "description02": "Além do meu amor por códigos, sou apaixonado por UI/UX. Adoro dar aquele toque especial aos designs, tornando as coisas não apenas funcionais, mas também visualmente incríveis. Afinal, é tudo sobre criar experiências que não apenas rodem suavemente, mas que também façam os olhos brilharem.",
+      "career": "Carreira",
+      "current": "Atualmente",
+      "workExperience": {
+        "ioasys": {
+          "role": "Engenheiro de software front-end",
+          "location": "Remoto",
+          "descriptions": {
+            "01": "Atuando na CVC Corp, a maior empresa de viagens da América Latina, desenvolvendo soluções para aprimorar a experiência de vendas e atendimento ao cliente.",
+            "02": "Liderei a criação de uma biblioteca de componentes versátil adotada em diversas plataformas, atendendo às necessidades de mais de 50 desenvolvedores. Utilizando as tecnologias mais recentes de <bold>ReactJS, Typescript, EmotionCSS e TSUP.</bold>",
+            "03": "Desenvolvendo múltiplas aplicações com o objetivo de otimizar a experiência de vendas utilizando <bold>NextJS, EmotionCSS</bold>. Através de estratégias inovadoras de desenvolvimento, contribuo para a criação de interfaces amigáveis que aprimoram a experiência geral para a equipe de vendas, impulsionando as vendas da empresa.",
+            "04": "Integração contínua/Implantação contínua, integração de pipeline, pull requests, revisões de código, testes unitários/integrados/e2e."
+          }
+        },
+        "korin": {
+          "role": "Engenheiro de software front-end",
+          "location": "Ipeúna, SP",
+          "descriptions": {
+            "01": "Encabecei o desenvolvimento de uma aplicação interna para gerenciamento de notícias, acesso a documentos e reservas utilizando <bold>NextJS, ReactJS, MySQL e NodeJS.</bold>",
+            "02": "Implementei funcionalidades amigáveis ao usuário para atualizações de notícias contínuas, recuperação eficiente de documentos e reservas facilitadas de salas de reuniões e veículos.",
+            "03": "Assegurei a escalabilidade, responsividade e segurança da aplicação, contribuindo para uma comunicação interna aprimorada e gestão eficiente de recursos."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "footer": {
+      "subtitle": "Codado por Luis com ❤️ e muito ☕",
+      "copyright": "© 2023-presente Luis Silva. Todos direitos reservados."
+    },
+    "languageSelector": {
+      "label": "{locale, select, pt {Português} en {Inglês} other {Desconhecido}}"
+    },
+    "guestbookMessageBox": {
+      "title": "Assine meu guestbook!",
+      "subtitle": "Pode ser qualquer coisa, desde um feedback até um simples 'oi'!",
+      "submitButton": "Enviar",
+      "signInButton": "Entre com o Github",
+      "inputPlaceholder": "Digite sua mensagem aqui...",
+      "signOutButton": "Sair"
+    },
+    "pagesSummary": {
+      "guestBookCountLabel": "{count, plural, =0 {Não há comentários até agora} =1 {Um comentário até agora} other {# comentários}}"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "home": {
+      "greeting": "Hi, I'm Luis Silva",
+      "description": "Welcome to my world of code and pixels.",
+      "paragraph01": "I'm a passionate front-end software engineer who loves translating my art through code and pixels. When I'm not debugging, I'm breathing life into magical interfaces. Beware, my code has the power to surprise and entertain!",
+      "paragraph02": "I'm a photography and art enthusiast, constantly capturing the world around me in spontaneous moments. Outside the office, you'll likely find me at the gym, exploring new places, or enjoying time with friends.",
+      "paragraph03": "If you're up for a chat, I'm always available for a good conversation. Feel free to reach out to me anytime!"
+    },
+    "about": {
+      "title": "About me",
+      "greeting": "My name is Luis, and I'm <bold>{age}</bold> years old.",
+      "description": "I am a front-end developer with <bold>{experience}</bold> years of experience, and throughout my journey, I've worked with various technologies and frameworks such as: <italic>Next.js, ReactJS, Typescript, TailwindCSS, CSS, HTML, Git, and much more.</italic>",
+      "description02": "Beyond my love for code, I am passionate about UI/UX. I enjoy adding that special touch to designs, making things not only functional but also visually stunning. After all, it's all about creating experiences that not only run smoothly but also make the eyes light up.",
+      "career": "Career",
+      "current": "Current",
+      "workExperience": {
+        "ioasys": {
+          "role": "Front-end Software Engineer",
+          "location": "Remote",
+          "descriptions": {
+            "01": "Working at CVC Corp, the largest travel company in Latin America, developing solutions to enhance sales and customer service experiences.",
+            "02": "Led the creation of a versatile component library adopted across diverse platforms, catering to the needs of over 50 developers. Using the latest technologies of <bold>ReactJS, Typescript, EmotionCSS, and TSUP.</bold>",
+            "03": "Developing multiple applications aimed at optimizing the sales experience using <bold>NextJS, EmotionCSS</bold>. Through innovative development strategies, I contribute to creating user-friendly interfaces that enhance the overall experience for the sales team, ultimately driving improved company sales.",
+            "04": "Continuous Integration/Deployment Pipeline Integration, pull requests, code reviews, unit/integration/e2e testing."
+          }
+        },
+        "korin": {
+          "role": "Front-end Software Engineer",
+          "location": "Ipeúna, SP, Brazil",
+          "descriptions": {
+            "01": "Spearheaded the development of an internal application for news management, document access, and reservations using <bold>NextJS, ReactJS, MySQL, and NodeJS.</bold>",
+            "02": "Implemented user-friendly features for seamless news updates, document retrieval, and efficient booking of meeting rooms and vehicles.",
+            "03": "Ensured application scalability, responsiveness, and security, contributing to enhanced internal communication and efficient resource management."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "footer": {
+      "subtitle": "Coded by Luis with ❤️ and lots of ☕",
+      "copyright": "© 2023-present Luis Silva. All rights reserved."
+    },
+    "languageSelector": {
+      "label": "{locale, select, pt {Portuguese} en {English} other {Unknown}}"
+    },
+    "guestbookMessageBox": {
+      "title": "Sign my guestbook!",
+      "subtitle": "It can be anything, its up to you!",
+      "submitButton": "Sign",
+      "inputPlaceholder": "Write your message here...",
+      "signInButton": "Sign in with Github",
+      "signOutButton": "Sign out"
+    },
+    "pagesSummary": {
+      "guestBookCountLabel": "{count, plural, =0 {No comments yet} =1 {One comment till now} other {# comments}}"
+    }
+  }
+}
