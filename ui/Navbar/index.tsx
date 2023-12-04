@@ -2,6 +2,7 @@ import { GlobeAmericasIcon } from "@heroicons/react/24/outline";
 import { Logo } from "../Logo";
 import { Menu } from "./Menu";
 import { ThemeSwitch } from "../ThemeSwitch";
+import { LanguageSelector } from "../LanguageSelector";
 
 export const Navbar = () => {
   return (
@@ -10,9 +11,7 @@ export const Navbar = () => {
         <Logo className="pl-2" />
         <Menu />
         <div className="flex gap-1">
-          <button className="p-2">
-            <GlobeAmericasIcon className="w-6 h-6" />
-          </button>
+          <LanguageSelector />
           <ThemeSwitch />
         </div>
       </div>

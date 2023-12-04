@@ -16,12 +16,8 @@ const PAGES = [
     href: "/about",
   },
   {
-    label: "Blog",
-    href: "/blog",
-  },
-  {
     label: "Guest Book",
-    href: "/guest-book",
+    href: "/guestbook",
   },
 ] as const;
 
