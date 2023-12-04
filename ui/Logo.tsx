@@ -7,7 +7,7 @@ type LogoProps = {
 export const Logo = ({ className }: LogoProps) => (
   <p
     className={clsx(
-      "tracking-tighter font-bold text-lg leading-none font-mono",
+      "tracking-tighter font-bold text-lg leading-none font-mono select-none",
       className
     )}
   >
