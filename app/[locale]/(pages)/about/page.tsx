@@ -5,7 +5,11 @@ import { useFormatter } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export async function generateMetadata({ locale }: { locale: string }) {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   const t = await getTranslations({
     locale,
     namespace: "pages.about.meta",

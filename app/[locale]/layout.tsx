@@ -8,7 +8,11 @@ import { LOCALES } from "@/shared/locales";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
-export async function generateMetadata({ locale }: { locale: string }) {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   const t = await getTranslations({
     locale,
     namespace: "pages.home.meta",
