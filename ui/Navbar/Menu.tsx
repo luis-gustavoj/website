@@ -4,22 +4,8 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-
-const PAGES = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "About",
-    href: "/about",
-  },
-  {
-    label: "Guest Book",
-    href: "/guestbook",
-  },
-] as const;
+import { PAGES } from "@/shared/pages";
+import { usePathname } from "@/lib/navigation";
 
 type PagesHref = (typeof PAGES)[number]["href"];
 
@@ -40,7 +26,7 @@ export const Menu = () => {
   };
 
   return (
-    <motion.nav layout layoutRoot>
+    <motion.nav layout layoutRoot className="max-md:hidden">
       <ul className="flex gap-4 w-max">
         {PAGES.map((page) => (
           <li
