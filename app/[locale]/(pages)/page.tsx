@@ -18,7 +18,7 @@ const LINKS = [
   {
     platform: "linkedin",
     title: "luis-gustavosilva",
-    href: "www.linkedin.com/in/luis-gustavosilva",
+    href: "https://linkedin.com/in/luis-gustavosilva",
   },
   {
     platform: "github",
