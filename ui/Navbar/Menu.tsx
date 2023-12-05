@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { useEffect, useState } from "react";
 import { PAGES } from "@/shared/pages";
 import { usePathname } from "@/lib/navigation";

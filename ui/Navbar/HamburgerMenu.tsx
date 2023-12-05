@@ -2,7 +2,7 @@
 
 import { PAGES } from "@/shared/pages";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { LanguageSelector } from "../LanguageSelector";

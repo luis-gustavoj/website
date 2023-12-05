@@ -1,9 +1,9 @@
+import { Link } from "@/lib/navigation";
 import profilePicture from "@/public/me.jpg";
 import { BlurImage } from "@/ui/BlurImage";
 import { LocaleText } from "@/ui/LocaleText";
 import { useFormatter } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 
 export async function generateMetadata({
   params: { locale },
