@@ -17,7 +17,7 @@ export const GuestbookMessageBox = ({
   isUserSignedIn,
 }: GuestBookMessageBoxProps) => {
   const t = useTranslations(LOCALE_BASE_PATH);
-  const formRef = useRef<HTMLFormElement>();
+  const formRef = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
 
   const handlePostForm = async (formData: FormData) => {
@@ -38,6 +38,7 @@ export const GuestbookMessageBox = ({
         {isUserSignedIn ? (
           <>
             <form
+              ref={formRef}
               className="flex w-full bg-zinc-300 dark:bg-zinc-500 h-[40px] rounded-lg p-1"
               action={handlePostForm}
             >
