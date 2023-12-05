@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { LOCALES } from "@/shared/locales";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 
 export async function generateMetadata({
   params: { locale },
@@ -74,6 +75,7 @@ export default async function RootLayout({
             </ThemeProvider>
           </NextIntlClientProvider>
         </NextAuthProvider>
+        <Analytics />
       </body>
     </html>
   );
