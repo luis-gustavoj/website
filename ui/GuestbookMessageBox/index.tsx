@@ -47,7 +47,7 @@ export const GuestbookMessageBox = ({
                 minLength={3}
                 maxLength={100}
                 name="message"
-                className="flex-1 px-4 text-zinc-100 bg-transparent outline-none placeholder:text-zinc-500 dark:placeholder:text-zinc-300"
+                className="flex-1 px-4 dark:text-zinc-100 bg-transparent outline-none placeholder:text-zinc-500 dark:placeholder:text-zinc-300"
               />
               <button
                 type="submit"
