@@ -2,7 +2,20 @@ import profilePicture from "@/public/me.jpg";
 import { BlurImage } from "@/ui/BlurImage";
 import { LocaleText } from "@/ui/LocaleText";
 import { useFormatter } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+
+export async function generateMetadata({ locale }: { locale: string }) {
+  const t = await getTranslations({
+    locale,
+    namespace: "pages.about.meta",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const MY_AGE = new Date().getFullYear() - 2001;
 const EXPERIENCE_TIME = new Date().getFullYear() - 2019;
@@ -88,11 +101,11 @@ const LOCALE_BASE_PATH = "pages.about";
 
 export default function About() {
   return (
-    <div className="w-full flex flex-col gap-8 pt-36">
+    <div className="w-full flex flex-col gap-8 max-md:gap-4 pt-36">
       <h1 className="font-medium text-2xl tracking-tighter">
         <LocaleText basePath={LOCALE_BASE_PATH} path="title" />
       </h1>
-      <div className="flex justify-between gap-20">
+      <div className="flex justify-between gap-20 max-md:flex-col max-md:gap-4">
         <BlurImage
           className="rounded-md min-w-[336px]"
           src={profilePicture}

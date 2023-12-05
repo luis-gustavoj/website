@@ -1,6 +1,9 @@
 {
   "pages": {
     "home": {
+      "meta": {
+        "description": "Welcome to my world of code and pixels."
+      },
       "greeting": "Hi, I'm Luis Silva",
       "description": "Welcome to my world of code and pixels.",
       "paragraph01": "I'm a passionate front-end software engineer who loves translating my art through code and pixels. When I'm not debugging, I'm breathing life into magical interfaces. Beware, my code has the power to surprise and entertain!",
@@ -8,6 +11,10 @@
       "paragraph03": "If you're up for a chat, I'm always available for a good conversation. Feel free to reach out to me anytime!"
     },
     "about": {
+      "meta": {
+        "title": "About me",
+        "description": "Just a bit about me and my career."
+      },
       "title": "About me",
       "greeting": "My name is Luis, and I'm <bold>{age}</bold> years old.",
       "description": "I am a front-end developer with <bold>{experience}</bold> years of experience, and throughout my journey, I've worked with various technologies and frameworks such as: <italic>Next.js, ReactJS, Typescript, TailwindCSS, CSS, HTML, Git, and much more.</italic>",
@@ -34,6 +41,12 @@
             "03": "Ensured application scalability, responsiveness, and security, contributing to enhanced internal communication and efficient resource management."
           }
         }
+      }
+    },
+    "guestbook": {
+      "meta": {
+        "title": "Guestbook",
+        "description": "Sign my guestbook and leave a message!"
       }
     }
   },

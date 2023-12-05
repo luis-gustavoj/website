@@ -1,6 +1,9 @@
 {
   "pages": {
     "home": {
+      "meta": {
+        "description": "Seja bem-vindo(a) ao meu mundo de código e pixels."
+      },
       "greeting": "Oi, eu sou o Luis Silva",
       "description": "Seja bem-vindo(a) ao meu mundo de código e pixels.",
       "paragraph01": "Sou um engenheiro de software front-end apaixonado por traduzir minha arte através de códigos e pixels. Quando não estou debugando, estou dando vida a interfaces mágicas. Cuidado, meus códigos têm o poder de surpreender e divertir!",
@@ -8,6 +11,10 @@
       "paragraph03": "Se estiver afim de trocar uma ideia, estou sempre à disposição para uma boa conversa. Sinta-se à vontade para me chamar a qualquer momento!"
     },
     "about": {
+      "meta": {
+        "title": "Sobre mim",
+        "description": "Um pouquinho sobre mim e minha carreira."
+      },
       "title": "Sobre mim",
       "greeting": "Meu nome é Luis, tenho <bold>{age}</bold> anos.",
       "description": "Sou um desenvolvedor front-end com <bold>{experience}</bold> anos de experiência e durante minha jornada já trabalhei com diversas tecnologias e frameworks, como: <italic>Next.js, ReactJS, Typescript, TailwindCSS, CSS, HTML, Git e muito mais.</italic>",
@@ -34,6 +41,12 @@
             "03": "Assegurei a escalabilidade, responsividade e segurança da aplicação, contribuindo para uma comunicação interna aprimorada e gestão eficiente de recursos."
           }
         }
+      }
+    },
+    "guestbook": {
+      "meta": {
+        "title": "Guestbook",
+        "description": "Assine meu guestbook e deixe sua marca!"
       }
     }
   },

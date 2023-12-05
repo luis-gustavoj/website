@@ -51,7 +51,7 @@ export default async function Home() {
     <div className="w-full flex flex-col gap-8">
       <div className="flex justify-between items-center w-full pt-36">
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-200 leading-normal">
+          <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-200 leading-normal max-sm:text-2xl">
             <LocaleText basePath={LOCALE_BASE_PATH} path="greeting" />{" "}
             <WavingHand />
           </h1>
@@ -62,14 +62,14 @@ export default async function Home() {
         <Image
           alt="Me at a rooftop"
           src={profilePicture}
-          className="w-32 h-32 rounded-full -scale-x-100"
+          className="w-32 h-32 rounded-full -scale-x-100 max-md:hidden"
         />
       </div>
       <p>
         <LocaleText basePath={LOCALE_BASE_PATH} path="paragraph01" />
       </p>
 
-      <div className="grid grid-cols-3 grid-rows-[repeat(3,170px)] gap-4">
+      <div className="grid grid-cols-3 grid-rows-[repeat(3,170px)] gap-4 max-md:grid-cols-2">
         <BlurImage
           className="w-full h-full object-cover row-span-2 rounded-lg"
           src={placeImage}
@@ -93,7 +93,7 @@ export default async function Home() {
         <BlurImage
           src={hpImage}
           alt="A lamp and a statue of Edwiges"
-          className="w-full h-full object-cover rounded-lg row-span-2"
+          className="w-full h-full object-cover rounded-lg md:row-span-2"
         />
         <BlurImage
           src={roomImage}

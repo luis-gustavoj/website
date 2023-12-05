@@ -1,8 +1,20 @@
 import { getGuestbookEntries } from "@/db/actions";
 import { auth } from "@/lib/auth";
 import { GuestbookMessageBox } from "@/ui/GuestbookMessageBox";
-import { getFormatter } from "next-intl/server";
+import { getFormatter, getTranslations } from "next-intl/server";
 import { Suspense } from "react";
+
+export async function generateMetadata({ locale }: { locale: string }) {
+  const t = await getTranslations({
+    locale,
+    namespace: "pages.guestbook.meta",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const LoadingGuestbookEntries = () => {
   const ITEMS = Array.from({ length: 5 }, (_, i) => i);
