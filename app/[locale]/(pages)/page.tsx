@@ -9,10 +9,10 @@ import wheelImage from "@/public/wheel.jpeg";
 import { WavingHand } from "@/ui/WavingHand";
 import { ArrowUpRightIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 import { PagesSummary } from "@/ui/PagesSummary";
-import { Link } from "@/lib/navigation";
 import { BlurImage } from "@/ui/BlurImage";
 import { LocaleText } from "@/ui/LocaleText";
 import { getGuestbookEntriesCount } from "@/db/actions";
+import Link from "next/link";
 
 const LINKS = [
   {
