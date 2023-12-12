@@ -34,7 +34,7 @@ const LINKS = [
 
 const LOCALE_BASE_PATH = "pages.home";
 
-export default async function Home() {
+const SummaryCards = async () => {
   const guestbookEntriesCount = await getGuestbookEntriesCount();
 
   const summaryCards = [
@@ -47,6 +47,10 @@ export default async function Home() {
     },
   ];
 
+  return <PagesSummary cards={summaryCards} />;
+};
+
+export default function Home() {
   return (
     <div className="w-full flex flex-col gap-8">
       <div className="flex justify-between items-center w-full pt-36">
@@ -104,7 +108,7 @@ export default async function Home() {
       <p>
         <LocaleText basePath={LOCALE_BASE_PATH} path="paragraph02" />
       </p>
-      <PagesSummary cards={summaryCards} />
+      <SummaryCards />
       <p>
         <LocaleText basePath={LOCALE_BASE_PATH} path="paragraph03" />
       </p>
