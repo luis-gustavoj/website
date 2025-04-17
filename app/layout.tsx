@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
@@ -23,11 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${jetBrainsMono.className} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="flex flex-col justify-between min-h-screen w-full p-16 max-md:p-8 max-sm:p-4">
+            <main className="w-full mx-auto max-w-3xl">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
