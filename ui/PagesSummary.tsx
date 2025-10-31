@@ -43,7 +43,7 @@ const Card = ({
         },
       }}
     >
-      <span className="absolute inset-[-1000%] animate-[spin_10s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#bbbbbe_0%,#9f9fa8_50%,#bbbbbe_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#27272A_0%,#71717a_50%,#27272A_100%)]" />
+      <span className="absolute inset-[-1000%] animate-[spin_20s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#bbbbbe_0%,#9f9fa8_50%,#bbbbbe_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#27272A_0%,#71717a_50%,#27272A_100%)]" />
       <div className="w-full h-full bg-zinc-200 text-zinc-700 dark:bg-zinc-900 rounded-lg backdrop-blur-3xl dark:text-zinc-100">
         <div className="bg-zinc-200 absolute top-3 left-3 p-1 w-max rounded-md">
           {React.cloneElement(icon, { className: "h-6 w-6 stroke-zinc-700" })}

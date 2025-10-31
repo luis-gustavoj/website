@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { Link } from "@/lib/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { PAGES } from "@/shared/pages";
 import { usePathname } from "@/lib/navigation";
 
@@ -12,10 +12,6 @@ type PagesHref = (typeof PAGES)[number]["href"];
 export const Menu = () => {
   const pathname = usePathname() as PagesHref;
   const [activePage, setActivePage] = useState<PagesHref>(pathname);
-
-  useEffect(() => {
-    setActivePage(pathname);
-  }, [pathname]);
 
   const handleMouseEnter = (page: PagesHref) => {
     setActivePage(page);
@@ -38,7 +34,7 @@ export const Menu = () => {
             <Link
               className={clsx(
                 "px-2 py-1 leading-normal relative focus-visible:outline text-zinc-900 dark:text-zinc-50 transition",
-                page.href === activePage ? "text-zinc-300" : "text-zinc-400"
+                page.href === pathname ? "text-zinc-300" : "text-zinc-400"
               )}
               href={page.href}
             >

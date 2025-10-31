@@ -11,9 +11,10 @@ export const WavingHand = () => (
       rotate: [0, 14, -4, 14, 0],
       transition: {
         repeat: Infinity,
-        duration: 1.5,
+        duration: 2.5,
+        repeatDelay: 1,
         type: "tween",
-        bounce: 0.2,
+        ease: "easeInOut",
       },
     }}
   >

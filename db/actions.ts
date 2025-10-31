@@ -37,8 +37,9 @@ export async function saveGuestbookEntry(formData: FormData) {
   revalidatePath("/guestbook");
 }
 
-export async function getGuestbookEntries() {
+export async function getGuestbookEntries(limit: number = 100) {
   const entries = await prisma.guestbook.findMany({
+    take: limit,
     orderBy: {
       createdAt: "desc",
     },
