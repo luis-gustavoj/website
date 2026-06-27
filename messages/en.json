@@ -22,6 +22,16 @@
       "career": "Career",
       "current": "Current",
       "workExperience": {
+        "quod": {
+          "role": "Front-end Software Engineer",
+          "location": "Remote",
+          "descriptions": {
+            "01": "Developed and integrated multiple micro-frontends across the company platform, enabling independent deployments and improving team scalability",
+            "02": "Built and maintained frontend applications using React and Next.js, following shared architectural and design standards across teams.",
+            "03": "Contributed to the development of Java-based REST APIs, collaborating closely with backend engineers to define contracts, improve data flows, and ensure frontend–backend alignment.",
+            "04": "Worked in a distributed, international team environment, participating in technical discussions, code reviews, and architectural decisions."
+          }
+        },
         "ioasys": {
           "role": "Front-end Software Engineer",
           "location": "Remote",

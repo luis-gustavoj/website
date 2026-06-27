@@ -7,12 +7,12 @@ import placeImage from "@/public/place.jpeg";
 import roomImage from "@/public/room.jpeg";
 import wheelImage from "@/public/wheel.jpeg";
 import { WavingHand } from "@/ui/WavingHand";
-import { ArrowUpRightIcon, BookOpenIcon } from "@heroicons/react/24/outline";
-import { PagesSummary } from "@/ui/PagesSummary";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import { BlurImage } from "@/ui/BlurImage";
 import { LocaleText } from "@/ui/LocaleText";
-import { getGuestbookEntriesCount } from "@/db/actions";
 import Link from "next/link";
+import { Suspense } from "react";
+import { SummaryCards } from "./summary-cards";
 
 const LINKS = [
   {
@@ -33,22 +33,6 @@ const LINKS = [
 ];
 
 const LOCALE_BASE_PATH = "pages.home";
-
-const SummaryCards = async () => {
-  const guestbookEntriesCount = await getGuestbookEntriesCount();
-
-  const summaryCards = [
-    {
-      title: "Guest book",
-      href: "/guestbook",
-      icon: <BookOpenIcon />,
-      count: guestbookEntriesCount,
-      localeKey: "guestBookCountLabel",
-    },
-  ];
-
-  return <PagesSummary cards={summaryCards} />;
-};
 
 export default function Home() {
   return (
@@ -108,7 +92,15 @@ export default function Home() {
       <p>
         <LocaleText basePath={LOCALE_BASE_PATH} path="paragraph02" />
       </p>
-      <SummaryCards />
+      <Suspense
+        fallback={
+          <div className="w-full bg-zinc-200 text-zinc-700 dark:bg-zinc-900 rounded-lg backdrop-blur-3xl dark:text-zinc-100 h-[100px] animate-pulse">
+            <span className="sr-only">Loading...</span>
+          </div>
+        }
+      >
+        <SummaryCards />
+      </Suspense>
       <p>
         <LocaleText basePath={LOCALE_BASE_PATH} path="paragraph03" />
       </p>

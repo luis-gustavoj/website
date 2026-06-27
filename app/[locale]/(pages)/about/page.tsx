@@ -22,9 +22,26 @@ export async function generateMetadata({
 }
 
 const MY_AGE = new Date().getFullYear() - 2001;
-const EXPERIENCE_TIME = new Date().getFullYear() - 2019;
+const EXPERIENCE_TIME = new Date().getFullYear() - 2021;
 
 const WORK_EXPERIENCES = [
+  {
+    role: <LocaleText basePath="pages.about" path="workExperience.quod.role" />,
+    company: "Quod",
+    companyLink: "https://www.quod.com.br/",
+    location: (
+      <LocaleText basePath="pages.about" path="workExperience.quod.location" />
+    ),
+    startDate: "08-01-2025",
+    descriptions: ["01", "02", "03", "04"].map((path) => (
+      <LocaleText
+        key={path}
+        basePath="pages.about"
+        variant="markup"
+        path={`workExperience.quod.descriptions.${path}`}
+      />
+    )),
+  },
   {
     role: (
       <LocaleText basePath="pages.about" path="workExperience.ioasys.role" />
@@ -38,6 +55,7 @@ const WORK_EXPERIENCES = [
       />
     ),
     startDate: "02-21-2022",
+    endDate: "07-20-2025",
     descriptions: ["01", "02", "03", "04"].map((path) => (
       <LocaleText
         key={path}
